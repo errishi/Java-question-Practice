@@ -1,19 +1,4 @@
-//What is the value of x^x for any valueof x?
+//What is the value of x^x for any value of x?
 
-public class ques_1{
-    public static int expoNum(int n){
-        int ans = 1;
-        int power = n;
-        while(n > 0){
-            if((n & 1) != 0){
-                ans = ans * power;
-            }
-            power = power * power;
-            n = n>>1;
-        }
-        return ans;
-    }
-    public static void main(String[] args) {
-        System.out.println(expoNum(8));
-    }
-}
+/*The value of x^x = 0.
+Think about it, xor gives 0 when the bits are the same. If we compare the same number to itself, the bits will always be the same. So, the answer of x^x will always be 0. */

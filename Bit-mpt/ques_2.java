@@ -3,9 +3,9 @@
 import java.util.*;
 public class ques_2{
     public static void swapNum(int x, int y){
-        x = x + y;
-        y = x - y;
-        x = x - y;
+        x = x ^ y;
+        y = x ^ y;
+        x = x ^ y;
 
         System.out.println("Swapped Numbers are-");
         System.out.println(x);
